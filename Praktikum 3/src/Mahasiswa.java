@@ -98,7 +98,8 @@ public class Mahasiswa {
         System.out.println("Kendaraan: " + Kendaraan.getJenis()); 
         
         for(int i = 0;i < listMatkul.size();i++){
-           System.out.println(listMatkul.get(i).getNama());
+            System.out.println("Mata Kuliah: ");
+            System.out.println(listMatkul.get(i).getNama());
         }
     }
 
