@@ -10,7 +10,7 @@ public class Mahasiswa {
     private String NIM;
     private String Prodi;
     ArrayList<MataKuliah> listMatkul;
-    private Dosen DosenWali;
+    private DosenTetap DosenWali;
     private Kendaraan Kendaraan;
 
     public Mahasiswa(){
@@ -36,7 +36,7 @@ public class Mahasiswa {
         return Prodi;
     }
 
-    public Dosen getDosenWali() {
+    public DosenTetap getDosenWali() {
         return DosenWali;
     }
 
@@ -60,7 +60,7 @@ public class Mahasiswa {
         this.Prodi = prodi;
     }
 
-    public void setDosWal(Dosen dosenwali){
+    public void setDosWal(DosenTetap dosenwali){
         this.DosenWali = dosenwali;
     }
 

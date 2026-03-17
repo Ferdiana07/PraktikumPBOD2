@@ -5,6 +5,9 @@
  */
 
 import java.util.Date;
+import java.text.SimpleDateFormat;
+
+
 
 public class Pegawai {
     private String NIP;
@@ -64,11 +67,16 @@ public class Pegawai {
         this.gajiPokok = gajiPokok;
     }
 
+    protected String formatTanggal(Date date) {
+        SimpleDateFormat sdf = new SimpleDateFormat("d MMMM yyyy");
+        return sdf.format(date);
+    }
+
     public void printInfo(){
         System.out.println("NIP : " + NIP);
         System.out.println("Nama : " + nama);
-        System.out.println("Tanggal Lahir : " + TanggalLahir);
-        System.out.println("TMT : " + TMT);
+        System.out.println("Tanggal Lahir : " + formatTanggal(TanggalLahir));
+        System.out.println("TMT : " + formatTanggal(TMT));
         System.out.println("Gaji Pokok : " + gajiPokok);
     }
 }
