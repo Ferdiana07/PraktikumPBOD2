@@ -57,3 +57,6 @@ public class GenerikAnabul{
         klinik.showAnabul();
     }
 }
+
+/* Konsep koleksi bekerja dengan cara menyimpan banyak objek dalam satu wadah agar lebih mudah diatur dan diproses. 
+Pada program ini koleksi dipakai untuk menyimpan antrean hewan sehingga data bisa ditambah, dicek, diambil, dan dihapus dengan lebih rapi dan efisien */
